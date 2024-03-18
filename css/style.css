@@ -1,0 +1,119 @@
+:root{
+    --dark: #313236;
+    --light: #56585f;
+    --main: #347296;
+
+}
+body{
+    background-color: #ccc;
+}
+select{
+    transition: .3s;
+    padding: 6px 10px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--dark);
+    color: #fff;
+
+}
+option{
+    background: var(--dark);
+    color: #fff;
+
+}
+#myForm input{
+    background: var(--main);
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    transition: .2s;
+    border-radius: 5px;
+    color: #fff;
+
+}
+#myForm input:hover{
+    background-color: var(--dark);
+    color: #fff;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.container input{
+    display: inline-flex;
+    border: none;
+    outline: none;
+    margin: 10px;
+    background-color: var(--dark);
+    color: #fff;
+}
+.container div{
+    height: 200px;
+    background-color: var(--dark);
+    margin: 10px;
+    border: 5px solid var(--main);
+    border-radius: 10px;
+    
+}
+
+
+
+.myMark{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 999;
+    width: fit-content;
+    color: #fff;
+    background-color: var(--dark);
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 10px;
+    animation: appire 1s, disappire 1s 7s forwards;
+}
+.delete{
+    display: none;
+}
+
+.myMark a{
+    background-color: var(--main);
+    border: 2px solid var(--main);
+    margin: 5px;
+}
+.myMark a:hover{
+    background-color: transparent;
+    color: var(--main) !important;
+    border: 2px solid var(--main);
+
+}
+.myMark h5{
+    margin: 5px;
+    font-size: 17px;
+}
+.myMark span{
+    color: var(--main);
+    font-weight: 900;
+}
+
+@keyframes appire{
+    from{
+        right: -1000px;
+    }
+    to{
+        right: 10px;
+    }
+}
+
+@keyframes disappire{
+    from{
+        right: 10px;
+    }
+    to{
+        right: -1000px;
+        display: none;
+    }
+}

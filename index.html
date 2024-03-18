@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Converter</title>
+    </head>
+    <body>
+        
+        <div class="text-center" id="myForm">
+            <select id="select">
+                <option id="DtB" value="DtB">Decimal to Binary</option>
+                <option id="DtH" value="DtH">Decimal to Hexadecimal</option>
+                <option id="DtO" value="DtO">Decimal to Octal</option>
+                <option id="OtD" value="OtD">Octal to Decimal</option>
+                <option id="BtD" value="BtD">Binary to Decimal</option>
+            </select>
+
+            <input type="submit" value="Submit" onclick="submited()">
+        </div>
+        
+        <div class="container text-center">
+            <div id="inputBox">
+                <input id="input" placeholder="Enter a number">
+            </div>
+            <div id="resultBox">
+                <input id="result" type="text" readonly>    
+            </div>
+        </div>
+
+        <div class="myMark">
+            <h5>This website made by <span>Mohayyad Muawia</span></h5>
+            <a onclick="deleteMe()" class="btn text-light">close</a>
+          </div>    
+
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
+
